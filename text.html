@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Modo Escuro + Scroll Reveal</title>
+  <style>
+    /* Reset e base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .light-mode {
+      background-color: white;
+      color: black;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    /* Botão toggle */
+    #toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .light-mode #toggle-btn {
+      background-color: #333;
+      color: white;
+    }
+
+    .dark-mode #toggle-btn {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Seções */
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    section.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body class="light-mode">
+
+  <button id="toggle-btn">Ativar Modo Escuro</button>
+
+  <section class="scroll-section">
+    <h2>Bem-vindo</h2>
+    <p>Este site alterna entre modo claro e escuro, e cada seção aparece suavemente ao rolar.</p>
+  </section>
+
+  <section class="scroll-section">
+    <h2>Sobre</h2>
+    <p>As animações de scroll tornam o conteúdo mais envolvente e agradável.</p>
+  </section>
+
+  <section class="scroll-section">
+    <h2>Contacto</h2>
+    <p>Fale conosco! Esta seção também aparece com um efeito suave ao chegar na tela.</p>
+  </section>
+
+  <script>
+    // Toggle de modo claro/escuro
+    const btn = document.getElementById('toggle-btn');
+    const body = document.body;
+
+    btn.addEventListener('click', () => {
+      const dark = body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode', !dark);
+      btn.textContent = dark ? 'Ativar Modo Claro' : 'Ativar Modo Escuro';
+    });
+
+    // Função para revelar as seções ao rolar
+    function revealOnScroll() {
+      const sections = document.querySelectorAll('.scroll-section');
+      const windowHeight = window.innerHeight;
+
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+
+        if (top < windowHeight - 100) {
+          section.classList.add('reveal');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
