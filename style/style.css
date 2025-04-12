@@ -582,7 +582,7 @@ footer .footer-social-links .footer-list .footer-item a i {
 
 @media screen and (max-width: 768px) {
     :root {
-        --font-size-media-h1: 1.3rem;
+        --font-size-media-h1: 2rem;
         --font-size-media-h2: 1.2rem;
         --font-size-media-h3: 1rem;
         --font-size-media-p: 14px;
