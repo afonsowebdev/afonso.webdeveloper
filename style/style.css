@@ -25,7 +25,7 @@
     --font-size-icon: 28px;
     --font-size-icon-footer: 20px;
     --font-size-link: 16px;
-    
+
     --font-weight-h1: 700;
     --font-weight-h2: 700;
     --font-weight-h3: 700;
@@ -51,6 +51,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-margin: calc(#000000);
 }
 
 body {
@@ -581,7 +582,7 @@ footer .footer-social-links .footer-list .footer-item a i {
 
 @media screen and (max-width: 768px) {
     :root {
-        --font-size-media-h1: 2rem;
+        --font-size-media-h1: 1.3rem;
         --font-size-media-h2: 1.2rem;
         --font-size-media-h3: 1rem;
         --font-size-media-p: 14px;
@@ -622,6 +623,23 @@ footer .footer-social-links .footer-list .footer-item a i {
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+    }
+
+    .hero .hero-image img {
+        width: var(--width-media-img);
+        height: var(--height-media-img);
+    }
+
+    .hero .hero-subtitle {
+        font-size: var(--font-size-media-h1);
+    }
+
+    .hero .hero-paragraph {
+        font-size: var(--font-size-media-p);
+    }
+
+    .hero .hero-buttons {
+        flex-direction: column;
     }
 }
 
