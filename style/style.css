@@ -652,6 +652,11 @@ footer .footer-social-links .footer-list .footer-item a i {
         font-size: var(--font-size-media-h2);
     }
 
+    .about .about-paragraph {
+        font-size: var(--font-size-media-p);
+        text-align: center;
+    }
+
 
 
 
