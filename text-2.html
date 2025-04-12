@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll muda com orientação</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      padding: 20px;
+      margin: 10px;
+      background-color: #2196f3;
+      color: white;
+      border-radius: 10px;
+      font-size: 24px;
+    }
+
+    /* Estilo para modo paisagem */
+    @media screen and (orientation: landscape) {
+      .container {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .card {
+        min-width: 300px;
+        min-height: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">Item 1</div>
+    <div class="card">Item 2</div>
+    <div class="card">Item 3</div>
+    <div class="card">Item 4</div>
+    <div class="card">Item 5</div>
+    <div class="card">Item 6</div>
+  </div>
+
+</body>
+</html>

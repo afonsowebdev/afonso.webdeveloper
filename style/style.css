@@ -657,6 +657,27 @@ footer .footer-social-links .footer-list .footer-item a i {
         text-align: center;
     }
 
+    /* Section Skills */
+
+    .skills .skills-subtitle {
+        font-size: var(--font-size-media-h2);
+    }
+
+    /* Section Project */
+
+    .project .projects-subtitle {
+        font-size: var(--font-size-media-h2);
+    }
+
+    .project .projects-paragraph {
+        text-align: center;
+    }
+
+
+    /* section Contact */
+
+    
+
 
 
 
