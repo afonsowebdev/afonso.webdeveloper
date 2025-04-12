@@ -583,7 +583,7 @@ footer .footer-social-links .footer-list .footer-item a i {
 @media screen and (max-width: 768px) {
     :root {
         --font-size-media-h1: 2rem;
-        --font-size-media-h2: 1.2rem;
+        --font-size-media-h2: 1.5rem;
         --font-size-media-h3: 1rem;
         --font-size-media-p: 14px;
         --font-size-media-icon: 24px;
@@ -603,6 +603,8 @@ footer .footer-social-links .footer-list .footer-item a i {
     body {
         max-width: 100%;
     }
+
+    /* Header e Navbar */
 
     header {
         width: 100%;
@@ -625,6 +627,8 @@ footer .footer-social-links .footer-list .footer-item a i {
         gap: 10px;
     }
 
+    /* Section Hero */
+
     .hero .hero-image img {
         width: var(--width-media-img);
         height: var(--height-media-img);
@@ -640,6 +644,12 @@ footer .footer-social-links .footer-list .footer-item a i {
 
     .hero .hero-buttons {
         flex-direction: column;
+    }
+
+    /* Section About */
+
+    .about .about-subtitle {
+        font-size: var(--font-size-media-h2);
     }
 
 
