@@ -641,6 +641,14 @@ footer .footer-social-links .footer-list .footer-item a i {
     .hero .hero-buttons {
         flex-direction: column;
     }
+
+
+
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+    }
 }
 
 
