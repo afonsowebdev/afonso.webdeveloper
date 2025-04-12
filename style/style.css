@@ -676,7 +676,9 @@ footer .footer-social-links .footer-list .footer-item a i {
 
     /* section Contact */
 
-    
+    .contact .contact-subtitle {
+        font-size: var(--font-size-media-h2);
+    }
 
 
 
