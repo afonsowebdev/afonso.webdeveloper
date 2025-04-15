@@ -314,30 +314,29 @@ header .nav-bar .nav-list{
 }
 
 .project-image img {
-    width: var(--width-img);
-    height: /* var(--height-img) */ 200px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-shadow: 0 3px 5px rgb(0, 0, 0, 0.4);
 }
 
 .projects-subtitle {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-h2);
     color: var(--text-color);
-    margin-bottom: 10px;
+    margin: 10px;
     text-align: center;
     text-shadow: 0 3px 5px rgb(0, 0, 0, 0.2);
 }
 
-.projects-paragraph {
+/* .projects-paragraph {
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-p);
     color: var(--text-color);
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 0 3px 5px rgb(0, 0, 0, 0.1);
-}
+} */
 
 .project-list {
     display: flex;
@@ -347,7 +346,6 @@ header .nav-bar .nav-list{
     padding: 20px 0;
     margin: 0 auto;
     max-width: 1200px;
-    /* background-color: var(--color-bootstrap); */
 }
 
 .project-list .project-item {
@@ -355,9 +353,9 @@ header .nav-bar .nav-list{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 500px;
     height: 400px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     background-color: var(--background-color);
     box-shadow: 0 3px 5px rgb(0, 0, 0, 0.1);
@@ -381,7 +379,6 @@ header .nav-bar .nav-list{
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight-h3);
     color: var(--text-color);
-    margin-bottom: 10px;
     text-align: center;
     text-shadow: 0 3px 5px rgb(0, 0, 0, 0.2);
 }
